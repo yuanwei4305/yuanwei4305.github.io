@@ -1,348 +1,371 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="生信学习笔记">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="生信学习笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Yuan Wei">
 <meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>生信学习笔记</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">生信学习笔记</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+          <div class="content index posts-expand">
+            
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/21/genefamily/">
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-genefamily" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/21/genefamily/" class="article-date">
-  <time class="dt-published" datetime="2023-03-21T09:34:15.000Z" itemprop="datePublished">2023-03-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/21/genefamily/">genefamily</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yuan Wei">
+      <meta itemprop="description" content="">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="生信学习笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/21/genefamily/" class="post-title-link" itemprop="url">基因家族</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-03-21 17:34:15" itemprop="dateCreated datePublished" datetime="2023-03-21T17:34:15+08:00">2023-03-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-03-22 16:30:46" itemprop="dateModified" datetime="2023-03-22T16:30:46+08:00">2023-03-22</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>3.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="基因家族"><a href="#基因家族" class="headerlink" title="基因家族"></a>基因家族</h1><p>[亚家族]</p>
-<p>[顺势作用元件]</p>
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>基因家族是指具有高度相似或同源的基因序列集合，这些基因通常在不同物种中存在，并在不同的生物学过程中发挥着重要的生物学功能。研究基因家族的主要目的是揭示这些基因的进化历史、结构和功能，并探索它们在生物学中的作用。</p>
-<h1 id="基因家族的研究内容"><a href="#基因家族的研究内容" class="headerlink" title="基因家族的研究内容"></a>基因家族的研究内容</h1><p>具体来说，研究基因家族可以包括以下方面：</p>
-<ol>
-<li><p><strong>基因家族的进化</strong>：通过比较基因家族成员在不同物种中的序列和结构，揭示基因家族的起源、分化和扩增机制，以及它们在物种演化中的作用。</p>
-<p> 当一个基因家族在一种物种中有多个成员时，这些成员可能是由一个共同的祖先基因通过基因重复（duplication）和分化（divergence）进化而来的。基因重复指的是一个基因在基因组中发生了复制，形成了多个副本，而分化则是指这些副本在功能和序列上发生了改变，使得它们发展成不同的基因家族成员。</p>
-<p> 基因家族的进化过程是一个不断扩张和收缩的过程。在某些情况下，基因家族可能经历了快速的扩增事件，产生大量新的基因家族成员，这被称为“基因家族的爆发式扩增”（gene family expansion）。在其他情况下，基因家族可能经历了缩减事件，也就是说，一些成员被删除或失去了功能，这被称为“基因家族的缩减”（gene family contraction）。</p>
-<p> 基因家族的进化过程也可以通过进化树来描述。进化树是通过对不同基因家族成员的序列进行比对和分析所得到的。通过分析进化树，我们可以了解基因家族成员的进化历史，如何分化成不同的亚家族和成员，以及这些家族在不同物种之间的起源和演化。</p>
-<p> 进化过程中，一些基因家族成员可能会发生功能转移或新功能的演化，这可以为物种的进化提供新的生物学特性和生存优势。同时，基因家族成员的变异和新产生的家族成员也可能与一些疾病的发生和发展相关。因此，对基因家族进化的深入研究不仅可以增进我们对生命进化的理解，而且也有助于理解基因家族在健康和疾病中的功能和作用。</p>
-</li>
-<li><p><strong>基因家族的结构</strong>：研究基因家族成员的结构和功能区域，了解这些区域的功能和作用，以及如何影响基因家族成员的表达和调控。</p>
-<p> 基因家族的结构通常是由一个核心基因和其副本组成的。这些副本在结构上通常与核心基因类似，但可能具有不同的调控序列、剪接位点或启动子序列等。基因家族成员之间也可能存在差异，如序列长度、编码蛋白质的氨基酸序列等。</p>
-<p> 基因家族中的成员可能会通过多种方式组合形成复合结构，如簇（cluster）、串联（tandem）、分散（dispersed）等。在簇结构中，基因家族成员通常是连续排列在某一个染色体上，而串联结构则是指多个基因家族成员直接排列在一起，形成一个长串。分散结构指基因家族成员在染色体上分散排列，通常分布在不同染色体上。</p>
-<p> 基因家族的结构也可能会因为基因重组或其他基因组重塑事件而发生改变。例如，在某些情况下，某些成员可能会丢失或重复一些序列，或者整个基因家族可能被插入到新的基因组位置中。</p>
-<p> 总之，基因家族的结构可以有很大的多样性，这种多样性反映了基因家族的进化历史和生物学功能。对基因家族结构的深入理解可以为我们揭示基因家族在生物学中的重要性和功能提供更多的见解。</p>
-</li>
-<li><p><strong>基因家族的功能</strong>：探索基因家族成员在细胞和生物过程中的作用和功能，如基因表达调控、细胞信号传导、代谢和免疫应答等。</p>
-<p> 基因家族的成员通常在序列上相似，并且具有类似的生物学功能。这些成员可能在不同的组织和时期中发挥不同的生物学作用，但它们通常具有共同的基本功能。</p>
-<p> 基因家族的功能通常与生物体的发育、生长、代谢、免疫和适应性等方面密切相关。例如，同源基因家族成员可能在不同组织中发挥相似的生物学作用，如肌肉细胞中的肌球蛋白基因家族。另一方面，一些基因家族成员可能具有不同的生物学作用，例如免疫球蛋白基因家族成员在不同免疫反应中发挥不同的作用。</p>
-<p> 一些基因家族成员还可能具有新的功能或新的生物学特性，这种功能的出现通常是由于基因家族成员的演化和变异。例如，同源基因家族成员可能在不同的物种或群体中发生了不同的序列变异或基因重组，从而导致它们在新的组织或环境中发挥新的生物学功能。</p>
-<p> 除了生物学功能外，基因家族还可以用于进化研究、物种鉴定和基因组重构等方面。通过对基因家族成员的比较和分析，可以了解它们在物种之间的演化历史和进化关系，为研究生命起源和进化提供重要线索。</p>
-<p> 总之，基因家族的功能与生命科学的多个领域密切相关，对其深入的研究不仅可以为我们揭示生命的本质和进化的历史，而且也有助于揭示基因家族在生物学中的重要性和作用。</p>
-</li>
-<li><p><strong>基因家族与疾病的关系</strong>：研究基因家族在疾病中的作用和变化，如癌症、心血管疾病、神经系统疾病等，为疾病的诊断和治疗提供基础研究支持。</p>
-<p> 基因家族与疾病之间的关系非常密切。一些疾病可能是由于基因家族成员的异常表达或变异引起的。以下是几个例子：</p>
-<ol>
-<li>遗传性疾病：一些遗传性疾病是由于基因家族成员的突变或异常表达导致的。例如，血友病是由于凝血因子基因家族的突变或缺失引起的，囊性纤维化是由于囊泡膜转运蛋白基因家族的异常表达引起的。</li>
-<li>多基因疾病：一些复杂疾病可能是由多个基因家族成员的相互作用和变异引起的。例如，肥胖症可能涉及到多个基因家族，如脂肪酸转运蛋白家族、饱和脂肪酸酯化酶家族等。</li>
-<li>肿瘤：许多肿瘤都涉及到基因家族成员的异常表达和变异。例如，癌症抑制基因家族和促癌基因家族的不平衡表达可能会导致肿瘤的发生和发展。</li>
-</ol>
-<p> 通过对基因家族的研究，我们可以深入了解这些基因家族成员与疾病之间的关系，为疾病的诊断、治疗和预防提供更深入的了解和方法。</p>
-</li>
-</ol>
-<p>总的来说，研究基因家族可以为我们深入了解生物学进化、基因结构和功能、生物过程调控、疾病机制等提供重要的帮助。</p>
-<h1 id="研究基因家族的作用"><a href="#研究基因家族的作用" class="headerlink" title="研究基因家族的作用"></a>研究基因家族的作用</h1><ol>
-<li>深入了解生命进化历程：基因家族的演化和多样性可以反映生命进化历程的复杂性和多样性，通过对基因家族的研究可以更好地理解生命的起源、演化和发展。</li>
-<li>解析基因功能：基因家族成员具有相似的结构和功能特征，因此通过对一个基因家族成员的研究可以揭示其他基因家族成员的功能和作用。</li>
-<li>揭示基因调控机制：基因家族成员在调控基因表达和细胞信号转导途径中发挥重要作用，因此研究基因家族有助于揭示基因调控机制和分子信号传递途径。</li>
-<li>探究疾病发病机制：基因家族成员与许多疾病的发病机制相关，例如遗传性疾病、多基因疾病和肿瘤等。通过对基因家族的研究可以深入了解这些疾病的发病机制，为疾病的诊断、治疗和预防提供更深入的了解和方法。</li>
-</ol>
-<p>总之，研究基因家族对于理解生命的本质、揭示基因调控机制、解析基因功能以及探究疾病发病机制等方面都具有重要作用，对推动生命科学和医学领域的发展和进步具有重要意义。</p>
-<h1 id="研究基因家族的意义"><a href="#研究基因家族的意义" class="headerlink" title="研究基因家族的意义"></a>研究基因家族的意义</h1><p>研究基因家族的意义在于深入了解基因家族在生物体内的功能、进化和多样性，同时可以探索基因家族与遗传性疾病、肿瘤等疾病的关联，对推动生命科学和医学领域的发展和进步具有重要意义，具体包括以下方面：</p>
-<ol>
-<li>深入了解基因家族的演化历程：基因家族的成员在进化过程中经历了丰富的多样性和适应性，通过对基因家族的研究可以了解基因在生命起源和进化过程中的演化历程和适应性。</li>
-<li>解析基因家族成员的功能：基因家族成员具有相似的结构和功能特征，因此通过对一个基因家族成员的研究可以揭示其他基因家族成员的功能和作用，对理解基因功能和生物体内各种生理过程具有重要意义。</li>
-<li>探索基因家族与遗传性疾病的关联：一些遗传性疾病，例如囊性纤维化、肌萎缩性侧索硬化症等，与特定的基因家族成员有关，通过对这些基因家族的研究，可以深入了解疾病的发病机制和寻找治疗方法。</li>
-<li>探究基因家族与肿瘤的关联：许多肿瘤与特定的基因家族成员的变异有关，例如，细胞周期调控基因家族在肿瘤中的重要作用，对肿瘤的发生、发展和治疗具有重要意义。</li>
-<li>揭示基因调控机制：基因家族成员在调控基因表达和细胞信号转导途径中发挥重要作用，因此研究基因家族有助于揭示基因调控机制和分子信号传递途径，对疾病治疗和新药研发具有重要意义。</li>
-</ol>
-<p>总之，研究基因家族对于揭示生命的本质、解析基因功能、探究疾病发病机制以及推动生命科学和医学领域的发展和进步具有重要意义。</p>
-<h1 id="研究基因家族的流程"><a href="#研究基因家族的流程" class="headerlink" title="研究基因家族的流程"></a>研究基因家族的流程</h1><ol>
-<li>基因家族的识别和分类：通过生物信息学方法，如序列比对、聚类分析、进化树构建等，识别具有相似或同源序列的基因，并进行分类和命名。</li>
-<li>基因家族成员的结构和功能分析：通过生物信息学和实验方法，如蛋白结构预测、功能注释、基因表达分析等，了解基因家族成员的结构和功能，并探索它们在生物学过程中的作用。</li>
-<li>基因家族的进化分析：通过比较基因家族成员在不同物种中的序列和结构，揭示基因家族的进化历史、分化和扩增机制，以及它们在物种演化中的作用。</li>
-<li>基因家族与疾病的关系研究：通过生物信息学和实验方法，探索基因家族在疾病中的作用和变化，如基因突变、表达变化等，为疾病的诊断和治疗提供基础研究支持。</li>
-<li>基因家族的功能验证和应用研究：通过基因编辑、转基因动物、药物筛选等实验手段，验证基因家族成员的生物学功能，并探索其在生物学和医学中的应用前景。</li>
-</ol>
-<p>总的来说，基因家族的研究流程是一个综合性的过程，需要结合生物信息学、分子生物学、细胞生物学、生物化学等多个领域的技术和方法，以全面深入地了解基因家族的结构、功能和进化。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/21/genefamily/" data-id="clfi28ugh0001bkwp4f846ra8" data-title="genefamily" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-顺势作用元件" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/21/%E9%A1%BA%E5%8A%BF%E4%BD%9C%E7%94%A8%E5%85%83%E4%BB%B6/" class="article-date">
-  <time class="dt-published" datetime="2023-03-21T09:29:00.996Z" itemprop="datePublished">2023-03-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
     
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="顺势作用元件"><a href="#顺势作用元件" class="headerlink" title="顺势作用元件"></a>顺势作用元件</h1><p>顺势作用元件（cis-acting element）是指在DNA或RNA分子上特定的序列或结构，它们可以调节在其附近或随后的基因或转录本的表达或调控。顺势作用元件可以是DNA序列，也可以是RNA序列。顺势作用元件在转录、RNA加工、转运和翻译等过程中发挥着关键的作用。</p>
-<p>顺势作用元件可以包括启动子、增强子、转录因子结合位点、剪接位点、PolyA信号、核糖体结合位点等。启动子是在转录起始位点上游的一段DNA序列，它能够识别和结合转录因子，启动基因的转录。增强子也是一段DNA序列，通常位于启动子上游，可以增加基因转录的效率和数量。转录因子结合位点是一段DNA序列，它能够识别和结合特定的转录因子，从而影响基因的表达。剪接位点则可以调节RNA的剪接和可变剪接。PolyA信号则是在转录终止位点附近的一段DNA序列，它可以指示RNA的3’端，在加工后形成成熟的mRNA。核糖体结合位点则是一段RNA序列，它可以促进翻译的起始和终止。</p>
-<p>顺势作用元件在基因调控和表达方面具有重要的作用。通过研究顺势作用元件的序列和结构，可以更好地理解基因调控的机制，也可以为基因工程和基因治疗等领域提供理论基础和实验依据。</p>
-<h1 id="动物顺式作用元件预测"><a href="#动物顺式作用元件预测" class="headerlink" title="动物顺式作用元件预测"></a>动物顺式作用元件预测</h1><p>动物的顺式作用元件可以通过多种方法进行预测和识别，以下是一些常用的方法：</p>
-<ol>
-<li>序列比对方法：通过比对已知的顺式作用元件序列，寻找与目标序列相似的片段，来预测潜在的顺式作用元件。</li>
-<li>基于DNA序列的预测方法：通过识别具有特定结构的DNA序列片段，如TATA-box和CAAT-box等，来预测潜在的顺式作用元件。</li>
-<li>基于启动子区域的预测方法：通过在基因组DNA序列中识别与基因转录起始点相邻的启动子区域，来预测潜在的顺式作用元件。</li>
-<li>基于转录因子结合位点的预测方法：通过识别与已知转录因子结合位点相似的片段，来预测潜在的顺式作用元件。</li>
-</ol>
-<p>这些方法可以单独或结合使用，以提高顺式作用元件的预测准确率。值得注意的是，由于顺式作用元件在不同物种、不同基因和不同条件下具有差异性，因此在预测顺式作用元件时需要结合实验验证和功能分析来进行综合评估</p>
-<h1 id="有什么软件或者网站预测动物顺势作用元件的吗"><a href="#有什么软件或者网站预测动物顺势作用元件的吗" class="headerlink" title="有什么软件或者网站预测动物顺势作用元件的吗"></a>有什么软件或者网站预测动物顺势作用元件的吗</h1><ol>
-<li>JASPAR：这是一个免费的数据库，包含多种物种的转录因子结合位点信息，可以用于预测顺式作用元件。网址为：**<a target="_blank" rel="noopener" href="http://jaspar.genereg.net/">http://jaspar.genereg.net/</a>**</li>
-<li>MEME：这是一个在线的工具，可以用于在DNA序列中寻找共同的顺式作用元件序列。网址为：**<a target="_blank" rel="noopener" href="http://meme-suite.org/tools/meme">http://meme-suite.org/tools/meme</a>**</li>
-<li>TRANSFAC：这是一个商业化的数据库，包含了多种物种的转录因子结合位点信息和功能注释，可以用于预测顺式作用元件。网址为：**<a target="_blank" rel="noopener" href="https://portal.biobase-international.com/cgi-bin/build_licence.cgi?rm=home">https://portal.biobase-international.com/cgi-bin/build_licence.cgi?rm&#x3D;home</a>**</li>
-<li>rVista：这是一个在线工具，可以用于比较两个DNA序列的共同顺式作用元件和进化保守区域。网址为：**<a target="_blank" rel="noopener" href="http://rvista.dcode.org/">http://rvista.dcode.org/</a>**</li>
-</ol>
-<p>以上工具都有详细的说明和使用指南，可以根据具体需求选择合适的工具进行预测。</p>
-<h1 id="可视化顺势作用元件预测"><a href="#可视化顺势作用元件预测" class="headerlink" title="可视化顺势作用元件预测"></a>可视化顺势作用元件预测</h1><p>在预测顺式作用元件后，可视化这些元件有助于更好地理解其在基因表达调控中的作用。以下是几种可视化顺式作用元件预测结果的方法：</p>
-<ol>
-<li>WebLogo：WebLogo可以将顺式作用元件的预测结果生成一个序列图，其中每个位点的高度表示该位点上出现的碱基频率。这个工具可以用于比较两个顺式作用元件的相似性。网址为：**<a target="_blank" rel="noopener" href="https://weblogo.berkeley.edu/logo.cgi">https://weblogo.berkeley.edu/logo.cgi</a>**</li>
-<li>JBrowse：JBrowse是一个基于网页的基因组浏览器，可以将顺式作用元件的预测结果与基因组数据结合在一起进行可视化。该工具可以用于查看顺式作用元件与其周围基因的相对位置以及跨物种比较。网址为：**<a target="_blank" rel="noopener" href="http://jbrowse.org/">http://jbrowse.org/</a>**</li>
-<li>UCSC Genome Browser：UCSC Genome Browser是一个用于可视化基因组浏览的工具，可以将顺式作用元件的预测结果与基因组数据结合在一起进行可视化。该工具可以用于查看顺式作用元件的位置和在不同物种中的保守性。网址为：**<a target="_blank" rel="noopener" href="https://genome.ucsc.edu/">https://genome.ucsc.edu/</a>**</li>
-<li>Gviz：Gviz是一个用于可视化基因组浏览的R软件包，可以将顺式作用元件的预测结果与基因组数据结合在一起进行可视化。该工具可以用于查看顺式作用元件的位置和在不同物种中的保守性，以及在不同实验条件下基因表达的变化情况。网址为：**<a target="_blank" rel="noopener" href="https://bioconductor.org/packages/release/bioc/html/Gviz.html">https://bioconductor.org/packages/release/bioc/html/Gviz.html</a>**</li>
-</ol>
-<p>以上工具都可以根据具体需求进行选择和使用。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/21/%E9%A1%BA%E5%8A%BF%E4%BD%9C%E7%94%A8%E5%85%83%E4%BB%B6/" data-id="clfi28ugu0004bkwp29c28wns" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-亚家族" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/21/%E4%BA%9A%E5%AE%B6%E6%97%8F/" class="article-date">
-  <time class="dt-published" datetime="2023-03-21T09:28:50.948Z" itemprop="datePublished">2023-03-21</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="亚家族"><a href="#亚家族" class="headerlink" title="亚家族"></a>亚家族</h1><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>基因家族是指在一个基因组中，具有高度相似序列和结构、具有类似功能的一组基因。亚家族则是指基因家族中相似性更高的一部分，通常具有更为相似的序列和功能。</p>
-<p>在亚家族中，基因之间的序列相似度可能会更高，但是在整个基因家族中，亚家族之间的序列相似度可能会相对较低。因此，研究人员通常会将基因家族中的成员进行分类，以便更好地了解它们的结构和功能。同时，亚家族的存在也有助于我们研究基因家族的进化历史和功能多样性的发展。</p>
-<h1 id="亚家族怎么分"><a href="#亚家族怎么分" class="headerlink" title="亚家族怎么分"></a>亚家族怎么分</h1><p>亚家族的分化是基于成员序列之间的相似性和进化关系来确定的。在研究基因家族时，常用的方法是利用比对和聚类算法来确定亚家族。具体的步骤如下：</p>
-<ol>
-<li>收集基因家族成员的序列，并进行比对。比对方法可以选择BLAST、Clustal等软件进行局部比对，也可以使用MAFFT、MUSCLE等软件进行全局比对。</li>
-<li>利用比对结果进行聚类，通常可以使用聚类软件如CD-HIT、OrthoFinder等。聚类算法可以根据比对得分、相似性阈值等参数将基因家族成员划分为不同的亚家族。</li>
-<li>对于聚类后的亚家族进行进一步分析，如建立进化树、注释功能等，以了解基因家族成员的进化关系和功能差异。</li>
-</ol>
-<p>需要注意的是，亚家族的划分和分析需要结合具体的研究目的和问题，以确定合适的方法和参数。同时，不同的分析方法可能会得到不同的结果，因此需要谨慎地进行分析和解释。</p>
-<h1 id="在linux上具体操作的方法"><a href="#在linux上具体操作的方法" class="headerlink" title="在linux上具体操作的方法"></a>在linux上具体操作的方法</h1><ol>
-<li>安装CD-HIT：可以从CD-HIT官网下载源码并编译安装，也可以使用Linux发行版自带的软件包管理器进行安装，如使用apt-get命令安装：**<code>sudo apt-get install cd-hit</code>**.</li>
-<li>准备输入文件：需要准备一个包含所有基因家族成员序列的文件，可以是FASTA格式或者其他常见的格式。假设输入文件名为**<code>gene_family.fasta</code>**，存储在当前目录下。</li>
-<li>运行CD-HIT进行亚家族聚类：可以使用以下命令行运行CD-HIT：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd-hit -i gene_family.fasta -o gene_family_cdhit.fasta -c 0.95 -n 5 -d 0 -M 10000 -T 8</span><br></pre></td></tr></table></figure>
-
-<p>其中，**<code>-i</code><strong>指定输入文件名，</strong><code>-o</code><strong>指定输出文件名，</strong><code>-c</code><strong>指定聚类相似度阈值（默认为0.9），</strong><code>-n</code><strong>指定最小长度为n个氨基酸或核苷酸，</strong><code>-d</code><strong>指定序列间距离，</strong><code>-M</code><strong>指定内存限制大小，</strong><code>-T</code>**指定线程数。这里将聚类相似度阈值设置为0.9，表示相似度大于等于0.9的序列将被聚类在一起。</p>
-<ol>
-<li>分析结果：CD-HIT将生成多个输出文件，其中包括聚类结果文件**<code>gene_family_cdhit.fasta.clstr</code><strong>，可以使用文本编辑器或者命令行工具查看结果文件。聚类结果文件中每个聚类以</strong><code>&gt;Cluster</code>**开头的行表示，后面是聚类中的序列ID和描述信息，例如：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;Cluster 0</span><br><span class="line">0       gi|357548327|ref|XP_003557696.1| PREDICTED: transcription factor uncharacterized LOC100369046 [Pan troglodytes]</span><br><span class="line">1       gi|513300712|ref|XP_005609921.1| PREDICTED: transcription factor uncharacterized LOC100369046 [Nomascus leucogenys]</span><br><span class="line">2       gi|513317211|ref|XP_005801107.1| PREDICTED: transcription factor uncharacterized LOC100369046 [Nomascus leucogenys]</span><br></pre></td></tr></table></figure>
-
-<p>其中**<code>Cluster 0</code>**表示第一个聚类，序列0、1、2属于同一亚家族。</p>
-<p>需要注意的是，在进行基因家族亚家族的分析时，除了CD-HIT外，还有其他常用的工具和方法，如BLAST、OrthoFinder、MAFFT等，可以根据具体情况选择合适的工具和方法进行分析。同时，分析结果需要结合基因家族的生物学背景和进化关系进行解释和分析。</p>
-<h1 id="亚家族分出来有什么作用"><a href="#亚家族分出来有什么作用" class="headerlink" title="亚家族分出来有什么作用"></a>亚家族分出来有什么作用</h1><p>将基因家族中的成员分成亚家族，有助于我们更好地理解基因家族的结构和功能。具体而言，亚家族可以帮助我们：</p>
-<ol>
-<li>预测基因的功能：亚家族中的基因通常具有相似的序列和功能，因此我们可以根据亚家族中已知基因的功能，预测新基因的可能功能。</li>
-<li>研究进化历史：基因家族在进化过程中经历了多次复制和分化，形成了相似但不完全相同的亚家族。通过比较亚家族中的序列和结构差异，我们可以了解基因家族的进化历史。</li>
-<li>研究功能多样性：基因家族中的不同亚家族可能在不同的生物过程中扮演不同的角色。研究亚家族的功能差异可以帮助我们更好地了解基因家族在生物进化和发展中的作用。</li>
-</ol>
-<p>总之，将基因家族分成亚家族可以帮助我们更好地理解基因家族的结构和功能，以及了解它们在生物进化和发展中的作用。</p>
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/21/%E4%BA%9A%E5%AE%B6%E6%97%8F/" data-id="clfi28ugl0003bkwpcxzfb1bv" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-first" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/21/first/" class="article-date">
-  <time class="dt-published" datetime="2023-03-21T09:10:48.000Z" itemprop="datePublished">2023-03-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          基因家族是指具有高度相似或同源的基因序列集合，这些基因通常在不同物种中存在，并在不同的>生物学过程中发挥着重要的生物学功能。研究基因家族的主要目的是揭示这些基因的进化历史、结>构和功能，并探索它们在生物学中的作用。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/03/21/genefamily/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/21/first/">first</a>
-    </h1>
+  
   
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>hello world</p>
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/21/first/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yuan Wei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="生信学习笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/21/first/" class="post-title-link" itemprop="url">first</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-03-21 17:10:48 / 修改时间：17:12:00" itemprop="dateCreated datePublished" datetime="2023-03-21T17:10:48+08:00">2023-03-21</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>10</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>hello world</p>
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/21/first/" data-id="clfi28ugc0000bkwp5lptcw27" data-title="first" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/21/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-03-21T08:31:46.786Z" itemprop="datePublished">2023-03-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/21/hello-world/">Hello World</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/21/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yuan Wei">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="生信学习笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/21/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-03-21 16:31:46" itemprop="dateCreated datePublished" datetime="2023-03-21T16:31:46+08:00">2023-03-21</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>367</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -358,115 +381,187 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/21/hello-world/" data-id="clfi28ugk0002bkwpht8t14kk" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yuan Wei</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yuan Wei</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">4k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">4 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-</article>
-
-
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li></ul>
-    </div>
-  </div>
+<script src="/js/schemes/pisces.js"></script>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/03/21/genefamily/">genefamily</a>
-          </li>
-        
-          <li>
-            <a href="/2023/03/21/%E9%A1%BA%E5%8A%BF%E4%BD%9C%E7%94%A8%E5%85%83%E4%BB%B6/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/03/21/%E4%BA%9A%E5%AE%B6%E6%97%8F/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/03/21/first/">first</a>
-          </li>
-        
-          <li>
-            <a href="/2023/03/21/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<script src="/js/next-boot.js"></script>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>
